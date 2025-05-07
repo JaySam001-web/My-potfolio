@@ -335,6 +335,13 @@
     color: var(--white);
   }
   
+  .profile-picture {
+    width: 100%;
+    height: auto;
+    border-radius: 50%; /* Makes the image circular */
+    object-fit: cover;
+  }
+  
   .experience-badge {
     position: absolute;
     bottom: -1rem;
@@ -1014,4 +1021,3 @@
       grid-template-columns: repeat(4, 1fr);
     }
   }
-  
