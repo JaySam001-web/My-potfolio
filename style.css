@@ -472,16 +472,27 @@
   
   .projects-grid {
     display: grid;
-    grid-template-columns: 1fr;
-    gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive grid */
+    gap: 20px; /* Space between cards */
+    padding: 20px;
   }
   
   .project-card {
-    background-color: var(--white);
-    border-radius: var(--radius);
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     overflow: hidden;
-    box-shadow: var(--shadow);
-    transition: var(--transition);
+    transition: transform 0.3s ease;
+  }
+  
+  .project-card:hover {
+    transform: translateY(-5px); /* Add hover effect */
+  }
+  
+  .project-card img {
+    width: 100%; /* Ensure images are responsive */
+    height: auto;
+    display: block;
   }
   
   .project-card:hover {
@@ -1019,5 +1030,15 @@
     
     .skills-grid {
       grid-template-columns: repeat(4, 1fr);
+    }
+  }
+
+  @media (max-width: 768px) {
+    .projects-grid {
+      grid-template-columns: 1fr; /* Single column on small screens */
+    }
+  
+    .project-card {
+      margin: 0 auto; /* Center the cards */
     }
   }

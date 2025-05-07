@@ -151,14 +151,11 @@ function filterProjects(filter) {
 
 // Display projects in the DOM
 function displayProjects(projectsList) {
-  // Clear projects container
-  projectsContainer.innerHTML = '';
-  
-  // Add projects to container
+  projectsContainer.innerHTML = ''; // Clear the container
+
   projectsList.forEach(project => {
     const card = document.createElement('div');
     card.className = `project-card ${project.featured ? 'project-featured' : ''}`;
-    
     card.innerHTML = `
       <div class="project-image">
         <div class="project-overlay">
@@ -169,28 +166,19 @@ function displayProjects(projectsList) {
       <div class="project-content">
         <h3 class="project-title">${project.title}</h3>
         <p class="project-description">${project.description}</p>
-        
         <div class="project-tags">
           ${project.tags.map(tag => `<span class="project-tag">${tag}</span>`).join('')}
         </div>
-        
         <div class="project-links">
-          ${project.githubUrl ? `
-            <a href="${project.githubUrl}" target="_blank" rel="noopener noreferrer" class="project-link btn-secondary">
-              <i class="fab fa-github"></i> Code
-            </a>
-          ` : ''}
-          ${project.demoUrl ? `
-            <a href="${project.demoUrl}" target="_blank" rel="noopener noreferrer" class="project-link btn-primary">
-              <i class="fas fa-external-link-alt"></i> Live Demo
-            </a>
-          ` : ''}
+          ${project.githubUrl ? `<a href="${project.githubUrl}" target="_blank" class="project-link btn-secondary"><i class="fab fa-github"></i> Code</a>` : ''}
+          ${project.demoUrl ? `<a href="${project.demoUrl}" target="_blank" class="project-link btn-primary"><i class="fas fa-external-link-alt"></i> Live Demo</a>` : ''}
         </div>
       </div>
     `;
-    
     projectsContainer.appendChild(card);
   });
+
+  console.log('Projects displayed:', projectsList); // Debugging
 }
 
 // Handle contact form submission
