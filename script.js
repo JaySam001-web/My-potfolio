@@ -15,9 +15,9 @@ const projects = [
     id: 1,
     title: 'E-commerce Platform',
     description: 'A full-featured online shopping platform with product listings, cart functionality, and payment gateway integration.',
-    tags: ['React', 'Node.js', 'MongoDB', 'Express', 'Redux'],
+    tags: ['React', 'Node.js', 'MySQL', 'Tailwind.css'],
     demoUrl: 'https://project-demo.com',
-    githubUrl: 'https://github.com/sammywekesa',
+    githubUrl: 'https://github.com/jaysam01/',
     featured: true,
   },
   {
@@ -26,15 +26,15 @@ const projects = [
     description: 'A responsive personal portfolio website built with modern web technologies.',
     tags: ['React', 'TailwindCSS', 'TypeScript'],
     demoUrl: 'https://project-demo.com',
-    githubUrl: 'https://github.com/sammywekesa',
+    githubUrl: 'https://github.com/jaysam01/',
   },
   {
     id: 3,
     title: 'Task Management App',
     description: 'A collaborative task management tool with real-time updates and team workspaces.',
-    tags: ['React', 'Firebase', 'Redux', 'TailwindCSS'],
+    tags: ['React', 'Typescript', 'MySQL', 'TailwindCSS'],
     demoUrl: 'https://project-demo.com',
-    githubUrl: 'https://github.com/sammywekesa',
+    githubUrl: 'https://github.com/jaysam01/',
   },
   {
     id: 4,
@@ -42,7 +42,7 @@ const projects = [
     description: 'A weather forecast application displaying current conditions and 5-day predictions.',
     tags: ['JavaScript', 'CSS', 'OpenWeather API'],
     demoUrl: 'https://project-demo.com',
-    githubUrl: 'https://github.com/sammywekesa',
+    githubUrl: 'https://github.com/jaysam01/',
   },
   {
     id: 5,
@@ -50,7 +50,7 @@ const projects = [
     description: 'A content management system allowing users to create, edit, and publish blog posts.',
     tags: ['Next.js', 'MongoDB', 'TailwindCSS'],
     demoUrl: 'https://project-demo.com',
-    githubUrl: 'https://github.com/sammywekesa',
+    githubUrl: 'https://github.com/jaysam01/',
     featured: true,
   },
   {
@@ -59,7 +59,7 @@ const projects = [
     description: 'An application for finding and saving recipes with ingredient-based search.',
     tags: ['React', 'Redux', 'Firebase'],
     demoUrl: 'https://project-demo.com',
-    githubUrl: 'https://github.com/sammywekesa',
+    githubUrl: 'https://github.com/jaysam01/',
   },
 ];
 
