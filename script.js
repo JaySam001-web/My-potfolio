@@ -74,6 +74,18 @@ document.addEventListener('DOMContentLoaded', () => {
   // Add event listeners
   setupEventListeners();
 });
+// Smooth scroll for all anchor links with hashes
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+      const targetId = this.getAttribute('href');
+      if (targetId.length > 1 && document.querySelector(targetId)) {
+        e.preventDefault();
+        document.querySelector(targetId).scrollIntoView({
+          behavior: 'smooth'
+        });
+      }
+    });
+  });
 
 // Setup event listeners
 function setupEventListeners() {
